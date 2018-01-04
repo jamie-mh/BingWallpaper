@@ -11,6 +11,5 @@ namespace BingWallpaper.APITypes
     {
         [JsonProperty("images")]
         public List<HPImageArchiveImage> Images { get; set; }
-
     }
 }
