@@ -26,20 +26,28 @@ namespace BingWallpaper
 
         static void Main(string[] args)
         {
-            // Get the archive object
-            HPImageArchive archive = MakeApiRequest()
-                                     .GetAwaiter()
-                                     .GetResult();
-            if (archive == null) return;
+            try
+            {
+                // Get the archive object
+                HPImageArchive archive = MakeApiRequest()
+                                         .GetAwaiter()
+                                         .GetResult();
 
-            // Download the image and save it in the temp folder
-            string imagePath = DownloadBitmap("https://www.bing.com" + archive.Images[0].URL)
-                               .GetAwaiter()
-                               .GetResult();
-            if (imagePath == null) return;
+                // Download the image and save it in the temp folder
+                string imagePath = DownloadBitmap("https://www.bing.com" + archive.Images[0].URL)
+                                   .GetAwaiter()
+                                   .GetResult();
 
-            // Set the new wallpaper
-            SetCenteredWallpaper(imagePath);
+                // Set the new wallpaper
+                SetCenteredWallpaper(imagePath);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.InnerException);
+                Console.WriteLine("--- Press any key to continue ---");
+                Console.ReadKey();
+            }
         }
 
         private static async Task<HPImageArchive> MakeApiRequest()
@@ -57,8 +65,11 @@ namespace BingWallpaper
                     // Parse the JSON
                     return JsonConvert.DeserializeObject<HPImageArchive>(content);
                 }
+                else
+                {
+                    throw new HttpRequestException();
+                }
             }
-            return null;
         }
 
         private static async Task<string> DownloadBitmap(string url)
@@ -79,8 +90,11 @@ namespace BingWallpaper
 
                     return savePath;
                 }
+                else
+                {
+                    throw new HttpRequestException();
+                }
             }
-            return null;
         }
 
         private static void SetCenteredWallpaper(string path)
