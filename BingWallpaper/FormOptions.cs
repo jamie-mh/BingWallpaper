@@ -71,6 +71,7 @@ namespace BingWallpaper
             comboLocale.SelectedValue = Properties.Settings.Default.Locale;
 
             checkBoxRunAtStartup.Checked = Properties.Settings.Default.RunAtStartup;
+            checkBoxAutomaticWallpaper.Checked = Properties.Settings.Default.AutomaticallySetNewWallpaper;
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
@@ -85,6 +86,7 @@ namespace BingWallpaper
             subkey.Close();
             Properties.Settings.Default.Locale = comboLocale.SelectedValue.ToString();
             Properties.Settings.Default.RunAtStartup = checkBoxRunAtStartup.Checked;
+            Properties.Settings.Default.AutomaticallySetNewWallpaper = checkBoxAutomaticWallpaper.Checked;
             Properties.Settings.Default.Save();
             Close();
         }

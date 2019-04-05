@@ -44,7 +44,7 @@
             this.comboLocale.Location = new System.Drawing.Point(17, 48);
             this.comboLocale.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboLocale.Name = "comboLocale";
-            this.comboLocale.Size = new System.Drawing.Size(282, 25);
+            this.comboLocale.Size = new System.Drawing.Size(282, 28);
             this.comboLocale.TabIndex = 0;
             // 
             // label
@@ -67,7 +67,7 @@
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK.Font = new System.Drawing.Font("Segoe UI Semibold", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.ForeColor = System.Drawing.Color.White;
-            this.buttonOK.Location = new System.Drawing.Point(230, 172);
+            this.buttonOK.Location = new System.Drawing.Point(129, 172);
             this.buttonOK.Margin = new System.Windows.Forms.Padding(4);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(81, 43);
@@ -83,7 +83,7 @@
             this.checkBoxRunAtStartup.ForeColor = System.Drawing.Color.White;
             this.checkBoxRunAtStartup.Location = new System.Drawing.Point(17, 93);
             this.checkBoxRunAtStartup.Name = "checkBoxRunAtStartup";
-            this.checkBoxRunAtStartup.Size = new System.Drawing.Size(218, 23);
+            this.checkBoxRunAtStartup.Size = new System.Drawing.Size(237, 24);
             this.checkBoxRunAtStartup.TabIndex = 7;
             this.checkBoxRunAtStartup.Text = "Run Bing Wallpaper at Startup";
             this.checkBoxRunAtStartup.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.checkBoxAutomaticWallpaper.ForeColor = System.Drawing.Color.White;
             this.checkBoxAutomaticWallpaper.Location = new System.Drawing.Point(17, 128);
             this.checkBoxAutomaticWallpaper.Name = "checkBoxAutomaticWallpaper";
-            this.checkBoxAutomaticWallpaper.Size = new System.Drawing.Size(247, 23);
+            this.checkBoxAutomaticWallpaper.Size = new System.Drawing.Size(266, 24);
             this.checkBoxAutomaticWallpaper.TabIndex = 7;
             this.checkBoxAutomaticWallpaper.Text = "Automatically Set Latest Wallpaper";
             this.checkBoxAutomaticWallpaper.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(141, 172);
+            this.buttonCancel.Location = new System.Drawing.Point(218, 172);
             this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(81, 43);
@@ -118,7 +118,7 @@
             // 
             // FormOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(323, 228);

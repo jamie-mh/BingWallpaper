@@ -68,7 +68,7 @@
             this.linkLabel.LinkColor = System.Drawing.SystemColors.ActiveCaption;
             this.linkLabel.Location = new System.Drawing.Point(13, 168);
             this.linkLabel.Name = "linkLabel";
-            this.linkLabel.Size = new System.Drawing.Size(278, 19);
+            this.linkLabel.Size = new System.Drawing.Size(306, 20);
             this.linkLabel.TabIndex = 8;
             this.linkLabel.TabStop = true;
             this.linkLabel.Text = "https://github.com/jamie-mh/BingWallpaper";
@@ -76,10 +76,10 @@
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(323, 213);
+            this.ClientSize = new System.Drawing.Size(333, 213);
             this.Controls.Add(this.linkLabel);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.label);

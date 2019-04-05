@@ -12,7 +12,6 @@ namespace BingWallpaper
         private BingClient _bingClient;
 
         private bool _exiting;
-        private DateTime _lastOpen;
         private int _currentImage = 0;
 
         public FormMain()
@@ -21,13 +20,13 @@ namespace BingWallpaper
 
             _bingClient = new BingClient();
             _exiting = false;
-            _lastOpen = DateTime.Now;
         }
 
         private void FormMain_Shown(object sender, EventArgs e)
         {
             SetFormLocation();
             AttemptUpdate();
+            _currentImage = 0;
            
             if(_bingClient.Images.Count > 0)
                 LoadPreview();
@@ -124,8 +123,7 @@ namespace BingWallpaper
         private void toolStripMenuItemShow_Click(object sender, EventArgs e)
         {
             Visible = true;
-            SetFormLocation();
-            AttemptUpdate();
+            FormMain_Shown(sender, e);
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
@@ -171,7 +169,7 @@ namespace BingWallpaper
             if(Properties.Settings.Default.AutomaticallySetNewWallpaper &&
                _bingClient.Images[0].Hash != previousHash)
             {
-                SetWallpaper(0, true);
+                _ = SetWallpaper(0, true);
             }
         }
 
