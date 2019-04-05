@@ -10,4 +10,4 @@
 
 Download the latest release and install it or build it yourself. The program stays in the notification tray and works in the background.
 
-[Download Installer](https://github.com/jamie-mh/BingWallpaper/releases/download/1.0.0.0/BingWallpaperSetup.exe)
+[Download Installer](https://github.com/jamie-mh/BingWallpaper/releases/download/1.0.1.0/BingWallpaperSetup.exe)
